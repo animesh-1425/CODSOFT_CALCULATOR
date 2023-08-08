@@ -1,0 +1,127 @@
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100&family=Orbitron&family=Poppins:wght@100;200;300&family=VT323&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    width: 100%;
+    height: 100vh ;
+    background-color: #242424;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+.calculator {
+    border: 1px solid #717377;
+    background-color: #242424;
+    border: none;
+    outline: none;
+    box-shadow: 5px 5px 12px #040609,
+    -5px -5px 12px rgba(0, 0, 0 ,.16);
+    border-radius: 30px;
+    padding: 20px 30px 30px 30px;
+    width:auto;
+    margin-top: 10px;
+  }
+  .ver{
+    padding: 6px 10px;
+    border-radius: 4px;
+    color: white;
+    background-color: #87A075;
+    width:fit-content;
+    margin: 22px 2px 40px 250px;
+  }
+ 
+  #eq{
+    width: 18vh;
+    border-radius: 30px;
+    background-color: #fb7c14;
+    
+    box-shadow: 5px 5px 8px #040609;
+  }
+  #eq:active{
+    box-shadow: inset 5px 5px 8px #95490b,
+                 inset -5px -5px 8px #fb7c14;
+  }
+
+  input{ 
+    color: #ffffff;
+    width: 320px;
+    border: none;
+    padding: 25px;
+    border-radius: 10px;
+    background-color: #87A075;
+    box-shadow: inset 8px 8px 9px #384331;
+    text-align: right;
+    font-size: 40px;
+   outline: none;
+  
+  }
+ input::placeholder{
+     color: #FFF;
+  }
+  .btn{
+    padding-top:10px ;
+  }
+
+  button{
+    background-color: #242424;
+    box-shadow:4px 4px 8px #040609;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    height: 60px;
+    width: 60px;
+    margin: 10px;
+    font-size: 20px;
+    border-radius: 50%;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  button:active{
+    box-shadow: inset 5px 5px 8px #040609,
+    inset -5px -5px 8px #242424;
+    transform: translateX(4px) translateY(4px);
+  }
+
+  .op{
+    color: #6dee0a;
+  }
+  h2{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    color: white;
+   
+  }
+ @media (max-width:480px) {
+ button{
+  font-size: 10px;
+  height: 45px;
+  width: 45px;
+ }
+ input{ 
+  width: 250px;
+  padding: 15px;
+
+
+}
+
+#eq{
+  width: 15vh;
+}
+.ver{
+  padding: 6px 10px;
+  margin: 22px 2px 40px 190px;
+}
+  
+ }
+ 
